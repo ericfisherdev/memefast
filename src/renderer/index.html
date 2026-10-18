@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' blob: data:; style-src 'self'; font-src 'self'; script-src 'self'"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MemeFast</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="panel">
+      <h1><img src="../../assets/logo.svg" alt="" width="32" height="32" />MemeFast</h1>
+
+      <section>
+        <button id="open-image" type="button" class="primary">Open image…</button>
+        <input id="file-input" type="file" accept="image/*" hidden />
+        <p class="hint">Or drop or paste an image anywhere.</p>
+      </section>
+
+      <section aria-labelledby="crop-heading">
+        <h2 id="crop-heading">Crop</h2>
+        <div class="row">
+          <select id="crop-aspect" aria-label="Crop aspect ratio">
+            <option value="">Free</option>
+            <option value="1">1:1</option>
+            <option value="1.3333333333">4:3</option>
+            <option value="1.7777777778">16:9</option>
+            <option value="0.75">3:4</option>
+            <option value="0.5625">9:16</option>
+          </select>
+          <button id="crop-start" type="button">Crop</button>
+          <button id="crop-reset" type="button">Reset crop</button>
+        </div>
+        <div id="crop-actions" class="row" hidden>
+          <button id="crop-apply" type="button" class="primary">Apply</button>
+          <button id="crop-cancel" type="button">Cancel</button>
+        </div>
+      </section>
+
+      <section aria-labelledby="text-heading">
+        <h2 id="text-heading">Text</h2>
+        <ul id="layer-list" class="layer-list"></ul>
+        <button id="add-text" type="button">+ Add text box</button>
+        <label class="check"><input id="uppercase" type="checkbox" /> ALL CAPS</label>
+        <p class="hint">Drag any text on the image to move it.</p>
+      </section>
+
+      <section aria-labelledby="style-heading">
+        <h2 id="style-heading">Style</h2>
+        <label class="field">Size <input id="size" type="range" min="3" max="25" step="0.5" /></label>
+        <label class="field">Fill <input id="fill" type="color" /></label>
+        <label class="field">Outline <input id="stroke" type="color" /></label>
+        <button id="reset-position" type="button">Reset position</button>
+      </section>
+
+      <section class="export">
+        <button id="save" type="button" class="primary">Save PNG</button>
+        <button id="copy" type="button">Copy</button>
+      </section>
+    </aside>
+
+    <main id="stage" class="stage">
+      <canvas id="canvas" aria-label="Meme preview" hidden></canvas>
+      <div id="empty-state" class="empty-state">
+        <p>Drop, paste, or open an image to start.</p>
+      </div>
+    </main>
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">MemeFast: a cat in sunglasses above the letters MF</title>
+  <defs>
+    <linearGradient id="lens" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b4270"/>
+      <stop offset="0.55" stop-color="#15161d"/>
+      <stop offset="1" stop-color="#0b0b0e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="104" fill="#ffd23f"/>
+
+  <g transform="translate(0 -10)" stroke-linejoin="round" stroke-linecap="round">
+    <!-- ears -->
+    <g stroke="#1a1a1a" stroke-width="9" fill="#ff9f43">
+      <path d="M110 200 L112 46 L232 112 Z"/>
+      <path d="M402 200 L400 46 L280 112 Z"/>
+    </g>
+    <path d="M130 150 L130 84 L196 118 Z" fill="#ff9aa8"/>
+    <path d="M382 150 L382 84 L316 118 Z" fill="#ff9aa8"/>
+
+    <!-- head -->
+    <ellipse cx="256" cy="205" rx="150" ry="120" fill="#ff9f43" stroke="#1a1a1a" stroke-width="9"/>
+
+    <!-- tabby stripes -->
+    <g stroke="#e0701f" stroke-width="9" fill="none">
+      <path d="M256 92 V126"/>
+      <path d="M224 97 L232 124"/>
+      <path d="M288 97 L280 124"/>
+    </g>
+
+    <!-- muzzle -->
+    <ellipse cx="256" cy="270" rx="54" ry="36" fill="#ffe2bd"/>
+
+    <!-- sunglasses -->
+    <g stroke="#0b0b0e" stroke-width="7" fill="url(#lens)">
+      <path d="M128 168 H246 V204 Q246 238 212 238 H160 Q128 238 128 204 Z"/>
+      <path d="M384 168 H266 V204 Q266 238 300 238 H352 Q384 238 384 204 Z"/>
+    </g>
+    <path d="M246 174 H266 V188 H246 Z" fill="#0b0b0e" stroke="#0b0b0e" stroke-width="7"/>
+    <path d="M128 176 L106 166 M384 176 L406 166" stroke="#0b0b0e" stroke-width="9" fill="none"/>
+    <g fill="#ffffff" opacity="0.55">
+      <path d="M150 178 H172 L148 222 H138 Z"/>
+      <path d="M182 178 H192 L174 210 H166 Z"/>
+      <path d="M278 178 H300 L276 222 H266 Z"/>
+      <path d="M310 178 H320 L302 210 H294 Z"/>
+    </g>
+
+    <!-- nose and mouth -->
+    <path d="M241 252 H271 L256 268 Z" fill="#ff7a8a" stroke="#1a1a1a" stroke-width="5"/>
+    <path d="M256 268 V277 M256 277 Q243 292 228 283 M256 277 Q269 292 284 283" stroke="#1a1a1a" stroke-width="5" fill="none"/>
+
+    <!-- whiskers -->
+    <path d="M128 262 L58 248 M128 278 L62 284 M384 262 L454 248 M384 278 L450 284" stroke="#1a1a1a" stroke-width="5" fill="none"/>
+  </g>
+
+  <!-- MF, Anton outlines (Impact-style), converted to paths so no font is needed -->
+  <g transform="translate(148.5 484) scale(0.09 -0.09)" fill="#ffffff" stroke="#1a1a1a" stroke-width="200" stroke-linejoin="round" paint-order="stroke fill">
+    <path d="M78 0V1760H614L762 687L909 1760H1450V0H1128V1268L926 0H610L396 1268V0Z"/>
+    <path transform="translate(1528 0)" d="M78 0V1760H782V1417H432V1137H764V798H432V0Z"/>
+  </g>
+</svg>

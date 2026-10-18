@@ -1,0 +1,39 @@
+{
+  "name": "memefast",
+  "version": "0.1.0",
+  "description": "Fast, ad-free meme generator",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "lint": "eslint .",
+    "pack": "electron-builder --dir --publish never",
+    "dist": "electron-builder --publish never"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "electron": "^44.9.0",
+    "electron-builder": "^26.15.3",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  },
+  "license": "MIT",
+  "author": "Eric Fisher <eric@ericfisher.dev>",
+  "homepage": "https://github.com/ericfisherdev/memefast",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericfisherdev/memefast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericfisherdev/memefast/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "meme",
+    "electron",
+    "meme-generator"
+  ]
+}

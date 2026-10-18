@@ -1,0 +1,37 @@
+appId: dev.ericfisher.memefast
+productName: MemeFast
+copyright: Copyright © 2026 Eric Fisher
+
+directories:
+  buildResources: assets
+  output: dist
+
+files:
+  - src/**/*
+  - assets/**/*
+  - package.json
+
+artifactName: ${productName}-${version}-${os}-${arch}.${ext}
+
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Graphics
+  maintainer: Eric Fisher <eric@ericfisher.dev>
+
+win:
+  target: nsis
+
+mac:
+  target:
+    - dmg
+    - zip
+  category: public.app-category.graphics-design
+  # No signing certificate is configured; skip identity discovery instead of failing.
+  identity: null
+
+publish:
+  provider: github
+  owner: ericfisherdev
+  repo: memefast
